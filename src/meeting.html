@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Яндекс.Переговорки — страница встречи</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <a class="header__logo" href="./index.html">
+        <img class="header__logo-image" src="./img/logo.svg" width="174" height="25" alt="Яндекс.Переговорки" />
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="visually-hidden">Яндекс.Переговорки</h1>
+    <section class="meeting">
+      <div class="meeting__inner">
+        <header class="meeting__header">
+          <h2 class="meeting__headline">Новая встреча</h2>
+          <button class="round-button round-button--close">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+        </header>
+        <div class="meeting__wrapper">
+          <div class="meeting__column">
+            <div class="meeting__element">
+              <label class="label" for="meeting-theme">Тема</label>
+              <input class="text-input" type="text" name="meeting-theme" id="meeting-theme" placeholder="О чём будете говорить?" required />
+            </div>
+          </div>
+          <div class="meeting__column">
+            <div class="meeting__element-wrapper">
+              <div class="meeting__element meeting__element--date">
+                <label class="label" for="meeting-date">Дата<span class="label__mobile">&nbsp;и&nbsp;время</span></label>
+                <input class="text-input" type="date" name="meeting-date" id="meeting-date" required />
+              </div>
+              <div class="meeting__element meeting__element--start">
+                <label class="label" for="meeting-start">Начало</label>
+                <input class="text-input" type="text" name="meeting-start" id="meeting-start" required />
+              </div>
+              <div class="meeting__element meeting__element--end">
+                <label class="label" for="meeting-end">Конец</label>
+                <input class="text-input" type="text" name="meeting-end" id="meeting-end" required />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="meeting__wrapper">
+          <div class="meeting__column">
+            <div class="meeting__element meeting__element--members">
+              <label class="label" for="meeting-members">Участники</label>
+              <select class="multiple-select" name="meeting-members" id="meeting-members" multiple="multiple" style="width: 100%;"></select>
+            </div>
+          </div>
+          <div class="meeting__column">
+            <div class="meeting__element meeting__element--rooms">
+              <label class="label">Рекомендованные переговорки</label>
+              <ul class="meeting__rooms-list">
+                <li class="meeting__room meeting__room--chosen">
+                  <p class="meeting__room-time">16:00&ndash;16:30</p>
+                  <h3 class="meeting__room-name-floor">Готем &bull; 4&nbsp;этаж</h3>
+                  <button class="meeting__room-unchoose">
+                    <span class="visually-hidden">Отменить выбор</span>
+                  </button>
+                </li>
+                <li class="meeting__room">
+                  <p class="meeting__room-time">16:00&ndash;16:30</p>
+                  <h3 class="meeting__room-name-floor">Поле непаханное &bull; 4&nbsp;этаж</h3>
+                  <button class="meeting__room-unchoose">
+                    <span class="visually-hidden">Отменить выбор</span>
+                  </button>
+                </li>
+                <li class="meeting__room">
+                  <p class="meeting__room-time">16:00&ndash;16:30</p>
+                  <h3 class="meeting__room-name-floor">Тёмная башня &bull; 4&nbsp;этаж</h3>
+                  <button class="meeting__room-unchoose">
+                    <span class="visually-hidden">Отменить выбор</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="meeting__element meeting__element--delete">
+              <button class="meeting__delete-button">Удалить встречу</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="meeting__buttons">
+        <!-- <div class="meeting__message">Выберите переговорку</div> -->
+        <button class="button button--secondary">Отмена</button>
+        <button class="button">Сохранить</button>
+      </div>
+    </section>
+  </main>
+
+  <section class="popup popup--delete">
+    <img class="popup__emoji" src="./img/emoji/emoji1.svg" width="40" height="40" alt="Встреча создана" />
+    <h3 class="popup__headline">Встреча будет<br/>удалена безвозвратно</h3>
+    <div class="popup__buttons-wrapper">
+      <button class="button button--secondary">Отмена</button>
+      <button class="button button--secondary">Удалить</button>
+    </div>
+  </section>
+
+  <script src="./js/libs.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

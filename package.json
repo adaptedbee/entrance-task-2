@@ -1,0 +1,37 @@
+{
+  "name": "most-starter-kit",
+  "version": "0.1.0",
+  "description": "Frontend starter kit",
+  "scripts": {
+    "postinstall": "cd src && mkdir fonts img images && cd img && mkdir icons && cd ../images && mkdir icons && cd ../scss && mkdir components"
+  },
+  "repository": {},
+  "author": "Mikhail Savotikov <adaptedbee@yandex.ru>",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.7.2",
+    "babel-preset-env": "^1.1.8",
+    "browser-sync": "^2.18.8",
+    "eslint-config-airbnb-base": "^11.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^2.0.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-html5-lint": "^1.1.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-stylelint": "^3.8.0",
+    "gulp-svg-symbols": "^2.0.2",
+    "gulp-uglify": "^2.0.1",
+    "imagemin-jpeg-recompress": "^5.1.0",
+    "imagemin-pngquant": "^5.0.0",
+    "stylelint-csstree-validator": "^1.1.1"
+  },
+  "dependencies": {}
+}

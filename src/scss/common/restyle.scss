@@ -1,0 +1,94 @@
+// CUSTOM SELECT
+
+.select2-container {
+  // width: 420px !important;
+}
+
+.select2-selection--multiple {
+  height: 38px;
+
+  background-color: #FFFFFF !important;
+  border: 2px solid #E9ECEF !important;
+  border-radius: 4px !important;
+
+  transition: .2s;
+
+  &:hover {
+    border-color: #007DFF;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    height: 44px;
+  }
+}
+
+.select2-search__field {
+  margin-top: 9px !important;
+
+  @include hn();
+  font-size: 13px !important;
+  line-height: 15px;
+  color: #000000;
+  letter-spacing: 0.47px;
+
+  &::placeholder {
+    color: #858E98;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-top: 11px !important;
+
+    font-size: 15px !important;
+    line-height: 17px;
+  }
+}
+
+.select2-dropdown {
+  border: 0;
+  box-shadow: 0 1px 16px 0 rgba(0,44,92,0.28);
+}
+
+.select2-results__option {
+  padding: 0;
+}
+
+.select2-selection__choice {
+  background-color: #E9ECEF !important;
+
+  @include hn();
+  font-size: 13px;
+  line-height: 17px;
+  color: #000000;
+}
+
+// DATEPICKER
+
+.is-today .pika-button {
+  color: #007DFF;
+}
+
+.pika-button:hover {
+  background-color: #007DFF;
+  color: #ffffff;
+}
+
+.is-selected .pika-button {
+  box-shadow: none;
+  background-color: #007DFF;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #0059FF;
+  }
+  &:active {
+    background-color: rgba(11,0,255,0.80);
+  }
+}
+
+.pika-lendar {
+  @media screen and (min-width: 360px) and (max-width: 767px) {
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+  }
+}

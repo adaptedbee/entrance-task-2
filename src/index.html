@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Яндекс.Переговорки</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <a class="header__logo" href="./index.html">
+        <img class="header__logo-image" src="./img/logo.svg" width="174" height="25" alt="Яндекс.Переговорки" />
+      </a>
+      <button class="button button--header">Создать встречу</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="planner">
+      <div class="planner__date-wrapper">
+        <button class="round-button round-button--prev">
+          <span class="visually-hidden">Предыдущая дата</span>
+        </button>
+        <h2 class="planner__date">14 дек &bull; Сегодня</h2>
+        <button class="round-button round-button--next">
+          <span class="visually-hidden">Следующая дата</span>
+        </button>
+        <section class="calendar-popup">
+          <div class="calendar-popup__inner"></div>
+        </section>
+      </div>
+      <div class="planner__wrapper">
+        <div class="planner__left-column">
+          <div class="planner-rooms">
+            <section class="planner-rooms__floor">
+              <h3 class="planner-rooms__floor-name">7 этаж</h3>
+              <ul class="planner-rooms__rooms-list">
+                <li class="planner-rooms__room planner-rooms__room--unavailable">
+                  <h4 class="planner-rooms__room-name">Ржавый Фред</h4>
+                  <p class="planner-rooms__room-capacity">3&ndash;6 человек</p>
+                </li>
+                <li class="planner-rooms__room">
+                  <h4 class="planner-rooms__room-name">Прачечная</h4>
+                  <p class="planner-rooms__room-capacity">до&nbsp;10&nbsp;человек</p>
+                </li>
+                <li class="planner-rooms__room">
+                  <h4 class="planner-rooms__room-name">Жёлтый дом</h4>
+                  <p class="planner-rooms__room-capacity">до&nbsp;10&nbsp;человек</p>
+                </li>
+                <li class="planner-rooms__room planner-rooms__room--unavailable">
+                  <h4 class="planner-rooms__room-name">Оранжевый тюльпан</h4>
+                  <p class="planner-rooms__room-capacity">до&nbsp;10&nbsp;человек</p>
+                </li>
+              </ul>
+            </section>
+            <section class="planner-rooms__floor">
+              <h3 class="planner-rooms__floor-name">6 этаж</h3>
+              <ul class="planner-rooms__rooms-list">
+                <li class="planner-rooms__room">
+                  <h4 class="planner-rooms__room-name">Джокер</h4>
+                  <p class="planner-rooms__room-capacity">3&ndash;6 человек</p>
+                </li>
+                <li class="planner-rooms__room">
+                  <h4 class="planner-rooms__room-name">Мариванна</h4>
+                  <p class="planner-rooms__room-capacity">3&ndash;6 человек</p>
+                </li>
+                <li class="planner-rooms__room">
+                  <h4 class="planner-rooms__room-name">Тонкий Боб</h4>
+                  <p class="planner-rooms__room-capacity">3&ndash;6 человек</p>
+                </li>
+                <li class="planner-rooms__room">
+                  <h4 class="planner-rooms__room-name">Чёрная вдова</h4>
+                  <p class="planner-rooms__room-capacity">3&ndash;6 человек</p>
+                </li>
+                <li class="planner-rooms__room">
+                  <h4 class="planner-rooms__room-name">Белорусский ликёр</h4>
+                  <p class="planner-rooms__room-capacity">3&ndash;6 человек</p>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+
+        <div class="planner__right-column">
+          <ul class="planner__hours-list">
+            <li class="planner__current-time" style="left: 235px">
+              <span class="planner__hour-mark planner__hour-mark--current">11:05</span>
+            </li>
+            <li><span class="planner__hour-mark">8</span></li>
+            <li><span class="planner__hour-mark">9</span></li>
+            <li><span class="planner__hour-mark">10</span></li>
+            <li><span class="planner__hour-mark">11</span></li>
+            <li><span class="planner__hour-mark">12</span></li>
+            <li><span class="planner__hour-mark">13</span></li>
+            <li><span class="planner__hour-mark">14</span></li>
+            <li><span class="planner__hour-mark">15</span></li>
+            <li><span class="planner__hour-mark">16</span></li>
+            <li><span class="planner__hour-mark">17</span></li>
+            <li><span class="planner__hour-mark">18</span></li>
+            <li><span class="planner__hour-mark">19</span></li>
+            <li><span class="planner__hour-mark">20</span></li>
+            <li><span class="planner__hour-mark">21</span></li>
+            <li><span class="planner__hour-mark">22</span></li>
+            <li><span class="planner__hour-mark">23</span></li>
+          </ul>
+          <div class="planner-diagram">
+            <section class="planner-diagram__floor">
+              <div class="planner-diagram__line-wrapper">
+                <div class="planner-diagram__line"></div>
+                <button class="planner-diagram__add-button">
+                  <span class="visually-hidden">Создать встречу</span>
+                </button>
+              </div>
+              <div class="planner-diagram__line-wrapper">
+                <div class="planner-diagram__line"></div>
+                <button class="planner-diagram__add-button">
+                  <span class="visually-hidden">Создать встречу</span>
+                </button>
+              </div>
+              <div class="planner-diagram__line-wrapper">
+                <div class="planner-diagram__meeting" style="left: 495px; width: 132px;">
+                  <section class="meeting-tooltip">
+                    <h5 class="meeting-tooltip__name">Рассуждения о высоком</h5>
+                    <p class="meeting-tooltip__time-place">14 декабря, 15:00—17:00 &nbsp;&bull;&nbsp; Жёлтый дом</p>
+                    <div class="meeting-tooltip__members">
+                      <img class="meeting-tooltip__member-photo" src="https://avatars3.githubusercontent.com/u/15365?s=460&v=4" width="24" height="24" alt="Дарт Вейдер" />
+                      <p class="meeting-tooltip__member-info"><span class="meeting-tooltip__member-name">Дарт Вейдер</span>&nbsp;и&nbsp;12&nbsp;участников</p>
+                    </div>
+                    <button class="round-button round-button--edit">
+                      <span class="visually-hidden">Редактировать встречу</span>
+                    </button>
+                  </section>
+                </div>
+                <div class="planner-diagram__line"></div>
+                <button class="planner-diagram__add-button">
+                  <span class="visually-hidden">Создать встречу</span>
+                </button>
+              </div>
+              <div class="planner-diagram__line-wrapper">
+                <div class="planner-diagram__line"></div>
+                <button class="planner-diagram__add-button">
+                  <span class="visually-hidden">Создать встречу</span>
+                </button>
+              </div>
+            </section>
+            <section class="planner-diagram__floor">
+              <div class="planner-diagram__line-wrapper">
+                <div class="planner-diagram__line"></div>
+                <button class="planner-diagram__add-button">
+                  <span class="visually-hidden">Создать встречу</span>
+                </button>
+              </div>
+              <div class="planner-diagram__line-wrapper">
+                <div class="planner-diagram__line"></div>
+                <button class="planner-diagram__add-button">
+                  <span class="visually-hidden">Создать встречу</span>
+                </button>
+              </div>
+              <div class="planner-diagram__line-wrapper">
+                <div class="planner-diagram__line"></div>
+                <button class="planner-diagram__add-button">
+                  <span class="visually-hidden">Создать встречу</span>
+                </button>
+              </div>
+              <div class="planner-diagram__line-wrapper">
+                <div class="planner-diagram__line"></div>
+                <button class="planner-diagram__add-button">
+                  <span class="visually-hidden">Создать встречу</span>
+                </button>
+              </div>
+              <div class="planner-diagram__line-wrapper">
+                <div class="planner-diagram__line"></div>
+                <button class="planner-diagram__add-button">
+                  <span class="visually-hidden">Создать встречу</span>
+                </button>
+              </div>
+            </section>
+            <div class="planner-diagram__current-time" style="left: 235px;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="popup">
+    <img class="popup__emoji" src="./img/emoji/emoji2.svg" width="40" height="40" alt="Встреча создана" />
+    <h3 class="popup__headline">Встреча создана!</h3>
+    <p class="popup__text">14&nbsp;декабря, 15:00&ndash;17:00</p>
+    <p class="popup__text">Готем &bull; 4&nbsp;этаж</p>
+    <button class="button">Хорошо</button>
+  </section>
+
+  <script src="./js/libs.min.js"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+</html>

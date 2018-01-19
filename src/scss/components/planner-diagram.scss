@@ -1,0 +1,134 @@
+.planner-diagram {
+  width: 1035px;
+  overflow: hidden;
+
+  background-color: #F6F7F9;
+
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -32px;
+
+    width: 105%;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      transparent,
+      transparent 64px,
+      rgba(19,100,205,0.10) 65px,
+      rgba(19,100,205,0.10)
+    );
+    background-size: 66px 100%;
+    background-repeat: repeat;
+
+    pointer-events: none;
+  }
+
+  @media screen and (max-width: 767px) {
+    background-color: #f6f7f9;
+  }
+}
+
+.planner-diagram__floor {
+  padding-top: 46px;
+
+  &:last-of-type {
+    padding-bottom: 80px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 36px;
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.planner-diagram__line-wrapper {
+  height: 28px;
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 6px;
+  }
+
+  position: relative;
+
+  @media screen and (max-width: 767px) {
+    height: 59px;
+    margin-bottom: 1px;
+    border-bottom: 1px solid #E9ECEF;
+
+    &:last-child {
+      margin-bottom: 0;
+
+      border-bottom: 0;
+    }
+  }
+}
+
+.planner-diagram__line {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  background-color: #ffffff;
+}
+
+.planner-diagram__add-button {
+  display: none;
+  width: 57px;
+  height: 28px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+
+  background-color: #2B50FD;
+  background-image: url('../img/icons/plus.svg');
+  background-size: 12px 12px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 0;
+  border-radius: 2px;
+
+  transition: .2s;
+
+  &:active {
+    background-color: #1D00FE;
+  }
+  &--active {
+    display: block;
+  }
+}
+
+.planner-diagram__meeting {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 30;
+
+  background-color: #D5DFE9;
+
+  cursor: pointer;
+  transition: .2s;
+
+  &:hover,
+  &:active {
+    background-color: #99A9B9;
+  }
+}
+
+.planner-diagram__current-time {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 1px;
+  height: 100%;
+  background-color: #007DFF;
+}
