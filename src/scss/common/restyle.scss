@@ -92,3 +92,72 @@
     float: none;
   }
 }
+
+// REACT-SELECT
+
+.Select-control {
+  height: 38px;
+
+  @include hn();
+  font-size: 13px;
+  line-height: 15px;
+  color: #000000;
+  letter-spacing: 0.47px;
+
+  background-color: #FFFFFF;
+  border: 2px solid #E9ECEF;
+  border-radius: 4px;
+
+  transition: .2s;
+
+  &:hover {
+    border-color: #007DFF;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    height: 44px;
+  }
+}
+
+.Select-placeholder {
+  line-height: 38px;
+  color: #858E98;
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    line-height: 44px;
+  }
+}
+
+.Select-input {
+  height: 100%;
+}
+
+.Select-input > input {
+  line-height:  15px;
+}
+
+.Select-menu-outer {
+  border: 0;
+  box-shadow: 0 1px 16px 0 rgba(0,44,92,0.28);
+}
+
+.Select--multi .Select-value {
+  background-color: #E9ECEF;
+  border: 0;
+  border-radius: 10px;
+
+  @include hn();
+  font-size: 13px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.Select--multi .Select-value-icon {
+  border: 0;
+
+  &:hover {
+    background-color: #E9ECEF;
+    color: #000000;
+    border-radius: inherit;
+  }
+}

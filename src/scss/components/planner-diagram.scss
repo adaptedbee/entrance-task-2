@@ -36,7 +36,7 @@
   padding-top: 46px;
 
   &:last-of-type {
-    padding-bottom: 80px;
+    padding-bottom: 120px; // 80px
   }
 
   @media screen and (max-width: 767px) {
@@ -120,6 +120,9 @@
   &:hover,
   &:active {
     background-color: #99A9B9;
+  }
+  &--active {
+    z-index: 40;
   }
 }
 

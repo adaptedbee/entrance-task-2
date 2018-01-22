@@ -19,7 +19,8 @@
     "jquery": "^2.0.0",
     "normalize.css": "~5.0.0",
     "select2": "^4.0.5",
-    "pikaday": "^1.6.1"
+    "pikaday": "^1.6.1",
+    "react-select": "^1.2.1"
   },
   "resolutions": {
     "jquery": "^2.0.0"
