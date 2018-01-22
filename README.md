@@ -1,7 +1,7 @@
 # Задание на вёрстку
 
-[Страница списка переговорок](https://msavotikov.bitbucket.io/projects/shri/)
-[Страница редактирования встречи](https://msavotikov.bitbucket.io/projects/shri/meeting.html)
+* [Страница списка переговорок](https://msavotikov.bitbucket.io/projects/shri/)
+* [Страница редактирования встречи](https://msavotikov.bitbucket.io/projects/shri/meeting.html)
 
 ## Установка и запуск
 
